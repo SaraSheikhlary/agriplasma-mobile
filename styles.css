@@ -1,0 +1,51 @@
+/* Dark Theme Styling */
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Background Watermark (The "faint" logo effect) */
+body::before {
+    content: "";
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 400px;
+    background-image: url('logo.png'); /* Ensure this matches your file name */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    opacity: 0.05; /* Faint watermark */
+    z-index: -1;
+}
+
+/* Navigation Header */
+header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #000000;
+}
+
+/* Small Logo in Top-Left */
+.nav-logo {
+    height: 40px; /* Small, clean size */
+    margin-right: 20px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 0.9em;
+    opacity: 0.8;
+}
+
+nav a:hover {
+    opacity: 1;
+}
